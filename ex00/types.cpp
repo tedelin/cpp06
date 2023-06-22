@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 15:08:39 by tedelin           #+#    #+#             */
-/*   Updated: 2023/06/22 14:09:21 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/06/22 16:29:22 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ bool	is_double(const std::string& s)
 	std::istringstream iss(s);
     double value;
     iss >> value;
-    if (iss.fail() || value > std::numeric_limits<double>::max() || value < std::numeric_limits<double>::min()) {
+    if (iss.fail() || value > std::numeric_limits<double>::max() || value < -std::numeric_limits<double>::max()) {
         return false;
 	}
 	return (true);
@@ -95,7 +95,7 @@ bool	is_float(const std::string& s)
 	std::istringstream iss(s);
     float value;
     iss >> value;
-  	if (iss.fail() || value > std::numeric_limits<float>::max() || value < std::numeric_limits<float>::min()) {
+  	if (iss.fail() || value > std::numeric_limits<float>::max() || value < -std::numeric_limits<float>::max()) {
     	return false;
 	}
 	return (true);

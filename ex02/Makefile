@@ -6,11 +6,11 @@
 #    By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/15 17:24:24 by tedelin           #+#    #+#              #
-#    Updated: 2023/06/22 15:17:35 by tedelin          ###   ########.fr        #
+#    Updated: 2023/06/22 16:00:42 by tedelin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = convert
+NAME = type
 SRC = main.cpp type.cpp
 OBJ = $(SRC:.cpp=.o)
 CC = c++

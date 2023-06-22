@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 10:45:39 by tedelin           #+#    #+#             */
-/*   Updated: 2023/06/22 14:04:36 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/06/22 16:50:50 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,10 @@ class ScalarConverter
 		~ScalarConverter();
 
 		static void	convert(const std::string& s);
+		static void convertAndPrintInt(int value);
+		static void convertAndPrintChar(char value);
+		static void convertAndPrintFloat(float value);
+		static void convertAndPrintDouble(double value);
 };
 
 #endif
