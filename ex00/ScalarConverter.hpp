@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 10:45:39 by tedelin           #+#    #+#             */
-/*   Updated: 2023/06/22 16:50:50 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/06/26 11:26:22 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,17 @@ bool	is_float(const std::string& s);
 class ScalarConverter
 {
 	public:
-		ScalarConverter();
-		ScalarConverter(const ScalarConverter& cpy);
-		ScalarConverter&	operator=(const ScalarConverter& rhs);
-		~ScalarConverter();
-
 		static void	convert(const std::string& s);
 		static void convertAndPrintInt(int value);
 		static void convertAndPrintChar(char value);
 		static void convertAndPrintFloat(float value);
 		static void convertAndPrintDouble(double value);
+		
+	private:
+		ScalarConverter();
+		ScalarConverter(const ScalarConverter& cpy);
+		ScalarConverter&	operator=(const ScalarConverter& rhs);
+		~ScalarConverter();
 };
 
 #endif
